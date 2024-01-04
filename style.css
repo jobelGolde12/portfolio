@@ -1,0 +1,127 @@
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+  --bg-primary: #010203;
+  --bg-secondary: darkcyan;
+  --clr-primary: #fff;
+  --clr-secondary: #333;
+  --clr-tri: orange;
+}
+body{
+    overflow-x: hidden;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    background: var(--bg-primary);
+}
+ ._header{
+    z-index: 999;
+    background: rgba(255,255,255,.1);
+    width: 100vw;
+    height: 10%;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+ }
+._main{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--bg-primary);
+}
+._logo{
+    align-items: center;
+}
+._logo img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+
+}
+._logo h5{
+    color: var(--clr-primary);
+    transform: translateY(15%);
+}
+._header .navbar{
+    margin-left: 1.5rem;
+}
+._header .navbar a{
+   color: var(--clr-primary);
+   text-decoration: none;
+   text-transform: uppercase;
+}
+._header .navbar a:hover{
+    color: var(--clr-tri);
+}
+
+._main-content{
+    width: 100vw;
+    gap: 5rem;
+    justify-content: space-between;
+}
+._main-content ._content h1{
+    color: var(--clr-primary);
+}
+._main ._main-content{
+    margin-top: 13rem;
+}
+._main-content ._content {
+    margin-top: 3rem;
+}
+._main ._main-content span{
+    color: var(--clr-tri);
+}
+._main ._main-content p{
+    color: var(--clr-primary);
+    transform: translateY(-50%);
+}
+
+._main-content ._image-container img{
+  width: 400px;
+  height: 400px;
+  transform: translateY(-20%);   
+}
+._main-content ._image-container::before{
+  position: absolute;
+  content: 'Back end';
+  width:200px;
+  height: 200px;
+  border-radius: 50%;
+  background: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  color: var(--clr-primary);
+  font-size: 1rem;
+}
+
+._main-content ._image-container::after{
+    position: absolute;
+    content: 'Front end';
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    background: var(--bg-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    color: var(--clr-primary);
+    font-size: 1rem;
+    right: 8%;
+    top: 60%;
+  }
+ #projects{
+    padding-top: 4rem;
+    width: 100vw;
+    height: 100vh;
+ }
+ ._view-projects h1{
+ color: var(--clr-primary);
+}
